@@ -1,3 +1,109 @@
 body {
-background-color: skyblue;
+  height: 2464px;
+  width: 1503px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 21px;
+}
+
+.header {
+  position: relative;
+  height: 665px;
+}
+
+.header_color {
+  background-color: #e9eae2;
+}
+
+/*Логотип*/
+.header__logo {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin: 20px;
+}
+
+.rect-1 {
+  fill: #f8c255;
+}
+
+.rect-2 {
+  fill: #bfe79e;
+}
+
+.rect-3 {
+  fill: #ff9b6d;
+}
+
+.rect-4 {
+  fill: #7dd5c9;
+}
+
+/*треугольник*/
+.header__triangle {
+  position: absolute;
+  width: 343px;
+  height: 285px;
+  top: 0;
+  left: 184px;
+}
+
+.header__triangle_color {
+  fill: #f9c34a;
+}
+
+.header__paginator {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  top: 89px;
+  left: 132px;
+  width: 81px;
+  height: 52px;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.header__paginator a,
+.header__paginator img {
+  align-self: center;
+}
+
+.header__price-and-item {
+display:flex;
+width: 600px;
+margin-top: -80px;
+margin-left: -30px;
+}
+.text {
+  width: 223px;
+  margin-right: -220px;
+}
+.header__price-and-item img {
+mix-blend-mode: multiply;
+}
+.popular {
+  height: 1454px;
+}
+
+.item1 {
+  height: 377px;
+  background-color: #7dd5c9;
+}
+
+.item2 {
+  height: 330px;
+}
+
+.item3 {
+  height: 377px;
+  background-color: #bfe79e;
+}
+
+.item4 {
+  height: 377px;
+  background-color: #f8c255;
 }
