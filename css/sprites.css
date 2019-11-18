@@ -1,0 +1,22 @@
+.Tea_Pots, .Layer_39, .Layer_40_copy{
+	background: url(sprites.png) no-repeat;
+}
+
+.Tea_Pots{
+	background-position: 0 -70px ;
+	width: 166px;
+	height: 102px;
+}
+
+.Layer_39{
+	background-position: -484px 0;
+	width: 80px;
+	height: 180px;
+}
+
+.Layer_40_copy{
+	background-position: -222px 0;
+	width: 190px;
+	height: 190px;
+}
+

@@ -1,18 +1,15 @@
 body {
   height: 2464px;
-  width: 1503px;
-  margin: 0;
+  width: 1500px;
+  margin: 0 auto;
   padding: 0;
-  font-family: Roboto;
   font-size: 21px;
+  background-color: brown;
 }
 
 .header {
   position: relative;
   height: 665px;
-}
-
-.header_color {
   background-color: #e9eae2;
 }
 
@@ -73,27 +70,298 @@ body {
 }
 
 .header__price-and-item {
-display:flex;
-width: 600px;
-margin-top: -80px;
-margin-left: -30px;
+  position: absolute;
+  display: flex;
+  top: 169px;
+  left: -133px;
+  width: 506px;
+  margin-bottom: 100px;
 }
-.text {
+
+h2 {
   width: 223px;
-  margin-right: -220px;
+  height: 61px;
+  color: #969693;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 37.5px;
+  word-spacing: -1px;
 }
+
 .header__price-and-item img {
-mix-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  margin-left: -132px;
 }
-.popular {
+
+.header__tagline {
+  position: absolute;
+  top: 146px;
+  left: 455px;
+  width: 325px;
+}
+
+.header__tagline .avatar {
+  /* Style for "Layer 6" */
+  width: 61px;
+  height: 61px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(../img/Layer_6.png);
+  background-position: 35% 15%;
+  background-size: 300%;
+  filter: grayscale(1);
+}
+
+h3 {
+  /* Style for "BY MATERIA" */
+  margin: 18px auto;
+  width: 165px;
+  height: 12px;
+  color: #adada7;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+h1 {
+  /* Style for "Good Thing" */
+  width: 325px;
+  height: 161px;
+  color: #3f3f3e;
+  font-family: "Roboto";
+  font-size: 56px;
+  font-weight: 100;
+  line-height: 58.94px;
+  text-align: center;
+}
+}
+
+.main {
+  display: flex;
   height: 1454px;
 }
 
-.item1 {
+.pots {
+  display: flex;
+  flex-direction: row;
+  position: relative;
   height: 377px;
-  background-color: #7dd5c9;
+  background-color: #f5f5f5;
+
 }
 
+.pots__element1 {
+  /* Style for "Shape 3" */
+  
+  width: 374px;
+  height: 377px;
+  background-color: #7dd5c9;
+  background-image:
+    linear-gradient(225deg, #f5f5f5 25%, transparent 25%),
+    linear-gradient(315deg, #f5f5f5 25%, transparent 25%);
+  background-position:
+    345px 0,
+    345px 0;
+  background-size: 30px 30px;
+  background-repeat: repeat-y;
+}
+
+.pots__element1-image {
+  /* Style for "Tea Pots" */
+  margin: 0 auto;
+  margin-top: 123px;
+  width: 128px;
+  height: 79px;
+
+  background-image: url(../img/sprites.png);
+  background-size: 380%;
+  background-position: 0 -50px;
+}
+
+.pots__element1-link {
+  margin: 40px auto;
+  width: 121px;
+  height: 34px;
+
+  text-decoration: none;
+}
+
+.pots__element1-link a {
+  text-decoration: none;
+}
+
+.pots__element1-link h4,
+.pots__element1-link h5 {
+  margin: 0;
+  text-align: center;
+}
+
+h4 {
+  /* Style for "Seven pots" */
+  color: #266258;
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h5 {
+  /* Style for "Collection" */
+  color: #438a7e;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.pots__price {
+  width: 324px;
+
+}
+
+.pots__price-text {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.heart-button {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.heart-button label {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+  color: #c5c5c5;
+  height: 14px;
+  color: #c5c5c5;
+  font-size: 19px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+
+/*button ready*/
+.heart-button input {
+  display: none;
+}
+
+.heart-button_favs {
+  width: 100px;
+  height: 20px;
+}
+
+.heart-button_favs label {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 20px;
+  line-height: 20px;
+  transition: all 0.2s;
+}
+
+.heart-button_favs label:before,
+.heart-button_favs label:after {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: all 0.2s .1s ease-out;
+}
+
+/*need*/
+.heart-button_favs label:before {
+  content: attr(data-on-text);
+}
+
+.heart-button_favs label:after {
+  content: attr(data-off-text);
+}
+
+[id='heartButton']:checked+label {
+  color: #e2264d;
+}
+
+.heart-button_favs input+label:before {
+  opacity: 0;
+  transform: translate(20px, 0);
+  color: #c5c5c5;
+}
+
+.heart-button_favs input+label:after {
+  opacity: 1;
+  transform: translate(0, 0);
+  color: #c5c5c5;
+}
+
+.heart-button_favs input:checked~label:before {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.heart-button_favs input:checked~label:after {
+  opacity: 0;
+  transform: translate(20px, 0);
+}
+
+/*-------------------*/
+.popular__image {
+  width: 398px;
+
+}
+
+.popular__image img {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.popular__tagline {
+  width: 349px;
+
+}
+
+.popular__tagline .avatar {
+  width: 61px;
+  height: 61px;
+  margin-top: 75px;
+  margin-left: 129px;
+  border-radius: 50%;
+  background-image: url(../img/Layer_6.png);
+  background-position: 35% 15%;
+  background-size: 300%;
+  filter: grayscale(1);
+}
+
+.popular__tagline .text2 h1 {
+  text-align: left;
+  margin-left: 91px;
+}
+
+.popular__button {
+  width: 38px;
+
+}
+.popular__button .triangle {
+    border-right: 2px solid #c5c5c5;
+    border-bottom: 2px solid #c5c5c5;
+    height: 8px;
+    width: 8px;
+    transform: rotate(-45deg);
+    margin-left: 5px;
+    margin-top: 185px;
+
+
+}
+
+/*
 .item2 {
   height: 330px;
 }
@@ -107,3 +375,4 @@ mix-blend-mode: multiply;
   height: 377px;
   background-color: #f8c255;
 }
+*/
