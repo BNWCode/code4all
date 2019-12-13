@@ -748,3 +748,65 @@ h5 {
   text-align: left;
   margin-left: 91px;
 }
+
+/*-----------footer--------------*/
+.footer {
+  display: flex;
+  height: 352px;
+  width: 1502px;
+  background-image: url(../img/Layer_24.jpg);
+  background-size: 100%;
+}
+
+.company {
+  width: 900px;
+  color: #7c7a7a;
+}
+
+.company_img {
+  height: 63px;
+  width: 210px;
+  margin-top: 171px;
+  margin-left: 47px;
+  background: url(../img/sprite.png) no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+  filter: grayscale(1)
+}
+
+.company p {
+  /* Style for "2014 WARE" */
+  width: 626px;
+  height: 16px;
+  margin-top: 47px;
+  margin-left: 48px;
+  color: #7c7a7a;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 15.94px;
+}
+
+.logo {
+  width: 602px;
+}
+
+.footer__logo {
+  display: flex;
+  width: 200px;
+  height: 100px;
+  margin-left: 261px;
+  margin-top: 121px;
+}
+
+.logo p {
+  /* Style for "warehouse" */
+  width: 142px;
+  height: 23px;
+  margin-left: 295px;
+  color: #a7a2a2;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 28.36px;
+}
