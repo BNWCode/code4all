@@ -771,7 +771,7 @@ h5 {
   background: url(../img/sprite.png) no-repeat;
   background-size: 100%;
   background-position: 0 0;
-  filter: grayscale(1)
+  filter: grayscale(1);
 }
 
 .company p {
