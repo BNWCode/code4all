@@ -137,10 +137,220 @@ h1 {
   line-height: 58.94px;
   text-align: center;
 }
+
+/*-----------navigation--------------*/
+.menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* Style for "Layer 15" */
+  top: 0;
+  left: 1048px;
+  width: 455px;
+  height: 665px;
+  background-color: #e9eae2;
 }
 
+.buttons-navi {
+  /* Style for "Rectangle" */
+  width: 70px;
+  height: 665px;
+  border: 1px solid red;
+}
+
+.b-home {
+  /* Style for "Rectangle" */
+  margin-top: 60px;
+  width: 70px;
+  height: 60px;
+  background-color: #86d8cd;
+  text-align: center;
+  vertical-align: middle;
+}
+.icon-n {
+  display: inline-block;
+  margin-top: 18px;
+  width: 30px;
+  height: 24px;
+  border: 1px solid red;
+  background-image: url("../sprite/sprites-n.png");
+  background-repeat: no-repeat;
+}
+.icon-home {
+  background-position: -12px -15px ;
+  width: 30px;
+  height: 24px;
+}
+
+.b-fav {
+  /* Style for "Rectangle" */
+  width: 70px;
+  height: 60px;
+  
+  text-align: center;
+}
+.icon-fav {
+  background-position: -59px -12px ;
+	width: 32px;
+	height: 27px;
+}
+
+.search {
+  /* Style for "Rectangle" */
+  width: 70px;
+  height: 60px;
+
+  text-align: center;
+}
+.icon-search {
+  background-position: -112px -3px ;
+	width: 25px;
+	height: 36px;
+}
+
+.navigation-menu {
+  /* Style for "Layer 15" */
+  display: flex;
+  flex-wrap: wrap;
+  width: 385px;
+  height: 665px;
+  background-color: rgba(20, 32, 56, 0.9);
+}
+
+.b-close {
+  width: 385px;
+  height: 85px;
+  border: 1px solid red;
+}
+
+.border {
+  position: relative;
+  top: 26px;
+  left: 335px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid red;
+}
+
+.close {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  opacity: 0.5;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 21px;
+  width: 2px;
+  background-color: #3ab3a6;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.name-site {
+  height: 18px;
+  width: 385px;
+  border: 1px solid red;
+}
+
+.name-site p {
+  /* Style for "WAREHOUSE" */
+  margin-top: 0;
+  margin-left: 34px;
+  color: #979797;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*--icons----*/
+.size {
+  width: 190px;
+  height: 100px;
+  border: 1px solid green;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.linkall {
+  margin-top: 22px;
+  text-decoration: none;
+  color: #3ab3a6;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: bottom;
+  background-image: url("../sprite/sprites-m.png");
+  background-repeat: no-repeat;
+}
+
+.icon1 {
+  background-position: -4px -26px;
+  width: 34px;
+  height: 20px;
+}
+
+.icon2 {
+  background-position: -62px -15px;
+  width: 20px;
+  height: 31px;
+}
+
+.icon3 {
+  background-position: -104px -11px;
+  width: 13px;
+  height: 35px;
+}
+
+.icon4 {
+  background-position: -142px -20px;
+  width: 41px;
+  height: 26px;
+}
+
+.icon5 {
+  background-position: -203px -13px;
+  width: 33px;
+  height: 33px;
+}
+
+.icon6 {
+  background-position: -259px -13px;
+  width: 9px;
+  height: 33px;
+}
+
+.icon7 {
+  background-position: -287px -7px;
+  width: 34px;
+  height: 39px;
+}
+
+/*-----------------main-------------*/
 .main {
   display: flex;
+  flex-direction: column;
   height: 1454px;
 }
 
@@ -771,7 +981,7 @@ h5 {
   background: url(../img/sprite.png) no-repeat;
   background-size: 100%;
   background-position: 0 0;
-  filter: grayscale(1);
+  filter: grayscale(1)
 }
 
 .company p {

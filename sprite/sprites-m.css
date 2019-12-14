@@ -1,0 +1,46 @@
+.Layer_16, .Layer_17, .Layer_18, .Layer_19, .Layer_20, .Layer_21, .Layer_22{
+	background: url(sprites.png) no-repeat;
+}
+
+.Layer_16{
+	background-position: -4px -26px ;
+	width: 34px;
+	height: 20px;
+}
+
+.Layer_17{
+	background-position: -62px -15px ;
+	width: 20px;
+	height: 31px;
+}
+
+.Layer_18{
+	background-position: -104px -11px ;
+	width: 13px;
+	height: 35px;
+}
+
+.Layer_19{
+	background-position: -142px -20px ;
+	width: 41px;
+	height: 26px;
+}
+
+.Layer_20{
+	background-position: -203px -13px ;
+	width: 33px;
+	height: 33px;
+}
+
+.Layer_21{
+	background-position: -259px -13px ;
+	width: 9px;
+	height: 33px;
+}
+
+.Layer_22{
+	background-position: -287px -7px ;
+	width: 34px;
+	height: 39px;
+}
+
